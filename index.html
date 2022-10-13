@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <!-- start Quiz button -->
+    <div class="fr_page">
+      <h1 class="quiz_txt">Quiz App</h1>
+      <button type="button" class="start_btn">Start</button>
+    </div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+      <div class="info-title"><span>Instructions</span></div>
+      <div class="info-list">
+        <div class="info">
+          1. The quiz contains <b>15</b> questions that are based on
+          <b>Nigeria's constitution</b>
+        </div>
+        <div class="info">
+          2. There is a <b>20 seconds</b> countdown timer for every questions
+          which is located at the right top corner,
+          <b>once the timer stops, the next question appears automatically.</b>
+        </div>
+        <div class="info">
+          3.
+          <b
+            >On providing answers for each questions, the next question appears
+            automatically as well.</b
+          >
+        </div>
+        <div class="info">
+          4. On completion of the quiz, a screen will display for your quiz
+          score. <b>You are expected to score atleast 50%. </b>
+        </div>
+        <div class="info">
+          5. Once you click on the start button, your timer starts counting..
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="quit">Exit Quiz</button>
+        <button class="restart">Continue</button>
+      </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+      <header>
+        <div class="title">Do you know the law?</div>
+        <div class="timer">
+          <div class="time_left_txt">Timer</div>
+          <div class="timer_sec"></div>
+        </div>
+        <div class="time_line"></div>
+      </header>
+      <section>
+        <div class="que_text">
+          <!-- Here I've inserted question from JavaScript -->
+        </div>
+        <div class="option_list">
+          <!-- Here I've inserted options from JavaScript -->
+        </div>
+      </section>
+
+      <!-- footer of Quiz Box -->
+      <footer>
+        <div class="total_que">
+          <!-- Here I've inserted Question Count Number from JavaScript -->
+        </div>
+      </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+      <div class="icon">
+        <div class="ans_icon"></div>
+      </div>
+      <div class="score_text"></div>
+      <div class="buttons">
+        <button class="restart">Retake</button>
+        <button class="quit">Quit</button>
+      </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

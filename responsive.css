@@ -1,0 +1,11 @@
+@media only screen and (min-width: 400px) {
+  .start_btn {
+    margin-left: 30em;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .start_btn {
+    margin-left: 12em;
+  }
+}

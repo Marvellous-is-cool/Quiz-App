@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
+<!--   plugins   -->
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    />
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="fontawesome/css/all.css" />
     <link rel="stylesheet" href="responsive.css" />
@@ -11,6 +17,7 @@
   </head>
   <body>
     <!-- start Quiz button -->
+    <div class = "container-fluid">
     <div class="fr_page">
       <h1 class="quiz_txt">Quiz App</h1>
       <button type="button" class="start_btn">Start</button>
@@ -88,8 +95,9 @@
         <button class="quit">Quit</button>
       </div>
     </div>
+    </div>
 
-    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <!-- inserted Questions and Options only -->
     <script src="js/questions.js"></script>
 
     <!-- Inside this JavaScript file I've coded all Quiz Codes -->

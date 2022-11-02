@@ -169,7 +169,7 @@ function optionSelected(answer) {
   for (i = 0; i < allOptions; i++) {
     option_list.children[i].classList.add("disabled"); //once user select an option then disabled all options
   }
-  let delay = 1;
+  let delay = 3;
   const DelayTimer = setInterval(function () {
     if (delay < 0) {
       clearInterval(DelayTimer);
@@ -253,7 +253,7 @@ function startTimer(time) {
           option_list.children[i].setAttribute("class", "option correct"); //adding green color to matched option
           option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag); //adding tick icon to matched option
           console.log("Time Off: Auto selected correct answer.");
-          let delay = 1;
+          let delay = 3;
           const DelayTimer = setInterval(function () {
             if (delay < 0) {
               clearInterval(DelayTimer);
